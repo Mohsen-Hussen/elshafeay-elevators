@@ -170,6 +170,30 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
 /*start nav*/
 nav {
   font-weight: 500;
@@ -274,11 +298,19 @@ nav .logoCutoum img {
 }
 
 /*start partners*/
-/* .partners {
-  height: 500px;
+.partners {
+  /* height: 34vw;
   background-image: url("../assets/partners-bg.png");
   background-size: contain;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+  margin: 3rem 0;
+}
+
+/*
+@media (max-width:991px) {
+  .partners {
+    background-image: none;
+  }
 } */
 
 .swiper {
@@ -311,4 +343,27 @@ nav .logoCutoum img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/*start about us*/
+.aboutUs {
+  background-color: var(--grayBackground);
+  padding: 3rem 0;
+  margin: 3rem 0;
+}
+
+.aboutUs img {
+  animation: scale-up-center 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate-reverse both;
+}
+
+.aboutUs p {
+  text-align: right;
+  color: var(--logoBlue);
+  font-size: 1.2rem;
+}
+
+.aboutUs p span {
+  color: var(--darkRed);
+  font-size: 1.5rem;
+  font-weight: bold;
 }
