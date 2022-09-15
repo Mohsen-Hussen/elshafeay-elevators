@@ -76,6 +76,7 @@ body::-webkit-scrollbar-thumb {
   z-index: 1;
   text-align: center;
   color: var(--logoBlue);
+  border-radius: 8px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -112,7 +113,32 @@ body::-webkit-scrollbar-thumb {
 .main-title:hover {
   color: white;
   border: 2px solid white;
+  border-radius: 8px;
   transition-delay: 0.5s;
+}
+
+@media (max-width:425px) {
+  .main-title {
+    width: 80%;
+  }
+}
+
+@media (min-width:426px) and (max-width:768px) {
+  .main-title {
+    width: 50%;
+  }
+}
+
+@media (min-width:769px) and (max-width:991px) {
+  .main-title {
+    width: 35%;
+  }
+}
+
+@media (min-width:992px) {
+  .main-title {
+    width: 40%;
+  }
 }
 
 /*general animation*/
@@ -261,39 +287,55 @@ nav .logoCutoum img {
   font-size: 1.4rem;
 }
 
-/*start service*/
-.serviceSec {
+/*start service + whyUs*/
+.serviceSec,
+.whyUs {
   background-color: var(--grayBackground);
   margin: 3rem 0;
   padding: 3rem 0;
 }
 
-.serviceSec .card {
+.serviceSec .card,
+.whyUs .card {
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
   border: 2px solid var(--lightRed);
   margin-bottom: 1.25rem;
   padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.serviceSec .card:hover {
+.serviceSec .card:hover,
+.whyUs .card:hover {
   border: 2px solid transparent;
   filter: drop-shadow(4px 10px 4px #0000002e);
   transition: all 0.5s ease-in-out;
 }
 
+.serviceSec .card img,
+.whyUs .card img {
+  width: 65%;
+  height: 65%;
+}
+
 .serviceSec .card .card-title,
-.serviceSec .card .card-text {
+.serviceSec .card .card-text,
+.whyUs .card .card-title,
+.whyUs .card .card-text {
   text-align: right;
 }
 
-.serviceSec .card .card-title {
+.serviceSec .card .card-title,
+.whyUs .card .card-title {
   color: var(--darkRed);
   font-weight: bold;
   font-size: 2rem;
 }
 
-.serviceSec .card .card-text {
+.serviceSec .card .card-text,
+.whyUs .card .card-text {
   color: var(--logoBlue);
 }
 
