@@ -46,6 +46,49 @@ body::-webkit-scrollbar-thumb {
   color: var(--lightRed) !important;
 }
 
+.contactBtn {
+  background-color: var(--darkRed);
+  color: var(--white);
+  border-radius: 5px;
+}
+
+.contactBtn:hover {
+  background-color: var(--white);
+  border: 2px solid var(--darkRed);
+  color: var(--darkRed);
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.contactBtn:focus {
+  box-shadow: none;
+}
+
+/*general animation*/
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+}
+
 /*start nav*/
 nav {
   font-weight: 500;
@@ -79,4 +122,36 @@ nav .logoCutoum img {
     flex-direction: column;
     align-items: center;
   }
+}
+
+/*start hero section*/
+.heroSec {
+  background-image: url("../assets/Hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 6rem;
+  height: 50vh;
+}
+
+@media (max-width:768px) {
+  .heroSec {
+    margin-top: 5rem;
+  }
+}
+
+.heroSec img {
+  border: 1px solid var(--lightRed);
+  border-radius: 5px;
+  animation: slide-top 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both;
+}
+
+.heroSec h1 {
+  color: var(--darkRed);
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.heroSec p {
+  color: var(--logoBlue);
+  font-size: 1.4rem;
 }
