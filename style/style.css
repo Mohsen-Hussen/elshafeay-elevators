@@ -355,12 +355,14 @@ nav .logoCutoum img {
 .whyUs .card .card-title {
   color: var(--darkRed);
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
-.serviceSec .card .card-text,
+.serviceSec .card .cardList,
 .whyUs .card .card-text {
   color: var(--logoBlue);
+  list-style: arabic-indic;
+  text-align: right;
 }
 
 /*start partners*/
@@ -418,9 +420,9 @@ nav .logoCutoum img {
   margin: 3rem 0;
 }
 
-.aboutUs img {
+/* .aboutUs img {
   animation: scale-up-center 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate-reverse both;
-}
+} */
 
 .aboutUs p {
   text-align: right;
@@ -558,6 +560,11 @@ nav .logoCutoum img {
   .loader img {
     width: 30%;
   }
+}
+
+.loader p {
+  color: var(--darkRed);
+  font-weight: bold;
 }
 
 /*start whats*/
