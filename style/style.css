@@ -5,7 +5,7 @@
   --loglBlack: #060707;
   --white: #fff;
   --boxShadow: 0px 4px 10px 4px #0000002e;
-  --grayBackground: #f8f9fa;
+  --grayBackground: #eaebedbf;
 }
 
 * {
@@ -427,4 +427,97 @@ nav .logoCutoum img {
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
+}
+
+/*start contact*/
+.contact iframe {
+  border: 0;
+  box-shadow: var(--boxShadow);
+  border-radius: 8px;
+}
+
+/* start social*/
+.social {
+  background-color: var(--grayBackground);
+  padding: 3rem 0;
+  margin: 3rem 0;
+}
+
+.social ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social ul li {
+  margin: 5px 0;
+  list-style-type: none;
+}
+
+.social ul li a {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  border-radius: 50%;
+  padding: 6px;
+  text-decoration: none;
+  box-shadow: inset 14px -4px 15px 0px rgb(0 0 0 / 30%);
+  background: linear-gradient(90deg, #ddd, #fff);
+  font-size: 1.7rem;
+  color: var(--logoBlue);
+  transition: all 0.5s ease-in-out;
+}
+
+.social ul li a:hover {
+  box-shadow: 0px 8px 7px 2px rgb(0 0 0 / 30%);
+  text-decoration: none;
+  transform: rotate(1turn);
+  transition: all 0.5s ease-in-out;
+}
+
+.social ul li:nth-child(1) a:hover {
+  color: #ff0050;
+}
+
+.social ul li:nth-child(2) a:hover {
+  color: #fffc00;
+}
+
+.social ul li:nth-child(3) a:hover {
+  color: #e1306c;
+}
+
+.social ul li:nth-child(4) a:hover {
+  color: #1da1f2;
+}
+
+.social ul li:nth-child(5) a:hover {
+  color: #ff0000;
+}
+
+.social ul li:nth-child(6) a:hover {
+  color: #34a853;
+}
+
+.social .card {
+  border: none;
+  box-shadow: var(--boxShadow);
+}
+
+.social .card .card-body {
+  color: var(--logoBlue);
+}
+
+.social .card .card-body span,
+.social .card .card-text a {
+  color: var(--darkRed);
+  font-weight: bold;
+}
+
+.social .card .card-text a {
+  text-decoration: none;
 }
