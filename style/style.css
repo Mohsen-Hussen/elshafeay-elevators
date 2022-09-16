@@ -551,6 +551,7 @@ nav .logoCutoum img {
 
 /*start loader*/
 .loader img {
+  padding: 1rem;
   width: 15%;
   /* animation: slide-left 8s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both; */
   animation: slide-left 8s linear infinite both;
