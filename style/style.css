@@ -329,6 +329,7 @@ nav .logoCutoum img {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 435px;
 }
 
 .serviceSec .card:hover,
@@ -338,10 +339,30 @@ nav .logoCutoum img {
   transition: all 0.5s ease-in-out;
 }
 
-.serviceSec .card img,
 .whyUs .card img {
-  width: 65%;
-  height: 65%;
+  width: 18vw;
+}
+
+@media (max-width:767px) {
+  .whyUs .card img {
+    width: 50vw;
+  }
+}
+
+@media (min-width:1024px) {
+  .whyUs .card img {
+    width: 15vw;
+  }
+}
+
+@media (min-width:1600px) {
+  .whyUs .card img {
+    width: 8vw;
+  }
+}
+
+.whyUs .card {
+  height: 350px;
 }
 
 .serviceSec .card .card-title,
