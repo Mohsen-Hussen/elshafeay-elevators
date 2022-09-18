@@ -196,30 +196,6 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-@-webkit-keyframes scale-up-center {
-  0% {
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5);
-  }
-
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-
-@keyframes scale-up-center {
-  0% {
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5);
-  }
-
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-
 @-webkit-keyframes slide-left {
   0% {
     -webkit-transform: translateX(1vw);
@@ -285,7 +261,6 @@ nav .logoCutoum img {
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 6rem;
-  /* height: 50vh; */
 }
 
 @media (max-width:768px) {
@@ -361,10 +336,6 @@ nav .logoCutoum img {
   }
 }
 
-.whyUs .card {
-  height: 350px;
-}
-
 .serviceSec .card .card-title,
 .serviceSec .card .card-text,
 .whyUs .card .card-title,
@@ -388,19 +359,9 @@ nav .logoCutoum img {
 
 /*start partners*/
 .partners {
-  /* height: 34vw;
-  background-image: url("../assets/partners-bg.png");
-  background-size: contain;
-  background-repeat: no-repeat; */
+  padding: 3rem 0;
   margin: 3rem 0;
 }
-
-/*
-@media (max-width:991px) {
-  .partners {
-    background-image: none;
-  }
-} */
 
 .swiper {
   width: 100%;
@@ -426,10 +387,6 @@ nav .logoCutoum img {
   padding: 3rem 0;
   margin: 3rem 0;
 }
-
-/* .aboutUs img {
-  animation: scale-up-center 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate-reverse both;
-} */
 
 .aboutUs p {
   text-align: right;
@@ -560,7 +517,6 @@ nav .logoCutoum img {
 .loader img {
   padding: 1rem;
   width: 15%;
-  /* animation: slide-left 8s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both; */
   animation: slide-left 10s linear infinite both;
 }
 
