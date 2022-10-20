@@ -270,7 +270,7 @@ nav .logoCutoum img {
 }
 
 .heroSec img {
-  border: 1px solid var(--lightRed);
+  /* border: 1px solid var(--lightRed); */
   border-radius: 5px;
   animation: slide-top 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both;
 }
